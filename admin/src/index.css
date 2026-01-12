@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+body {
+  @apply font-primary
+}
+
+
+
+/* Theme */
+@theme {
+  --color-primary: oklch(0.2133 0.0453 250.47);
+  --color-secondary: oklch(0.7665 0.1387 91.06);
+  --color-tertiary: oklch(0.6385 0.1059 188.37);      /* #e597b7 */
+  --color-destructive: oklch(0.6368 0.2078 25.33);
+  --color-muted: oklch(0.9683 0.0069 247.9);
+  --color-input: oklch(0.9276 0.0058 264.53);
+  --color-background: oklch(1 0 0);
+
+  /* Fonts */
+  --font-primary: 'Poppins', sans-serif;
+}
+
+/* 
+primary: "#0f172a",
+secondary: "#facc15",
+destructive: "#ef4444",
+muted: "#f1f5f9",
+input: "#e5e7eb",
+background: "#ffffff", */
