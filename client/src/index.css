@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+body{
+    @apply font-primary
+}
+
+
+
+/* Theme */
+@theme {
+  --color-primary: oklch(0.2133 0.0453 250.47);
+  --color-secondary: oklch(0.7665 0.1387 91.06);
+  --color-tertiary: oklch(0.6385 0.1059 188.37);  /* #e597b7 */
+
+  /* Fonts */
+  --font-primary: 'Poppins', sans-serif;
+}
