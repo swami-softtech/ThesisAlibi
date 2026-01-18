@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
 import { motion } from "motion/react";
-import heroBg from "../../assets/hero-bg.jpg";
+import heroBg from "../../assets/hero-bg.webp";
 
 export function HeroSection() {
   return (
@@ -11,6 +11,7 @@ export function HeroSection() {
         <img
           src={heroBg}
           alt="Academic library background"
+          loading="lazy"
           className="w-full h-full object-cover"
         />
         {/* Overlay */}
