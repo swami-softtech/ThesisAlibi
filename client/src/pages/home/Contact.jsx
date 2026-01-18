@@ -10,6 +10,7 @@ import { Mail, Phone, MapPin, MessageSquare, Send } from "lucide-react";
 import { useToast } from "../../hooks/use-toast";
 import emailjs from "@emailjs/browser";
 import TextArea from "../../components/TextArea";
+import SEO from "../../components/SEO";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -48,7 +49,13 @@ const Contact = () => {
   };
 
   return (
-    <Layout>
+    <>
+      <SEO
+        title="Contact Us"
+        description="Get in touch with ThesisAlibi for personalized thesis assistance and academic support. Contact our expert team for guidance on your research and writing needs."
+        keywords="contact ThesisAlibi, thesis help support, academic assistance contact, research guidance inquiry"
+      />
+      <Layout>
       {/* Page Header */}
       <section className="bg-primary py-20">
         <div className="container mx-auto px-4 text-center">
@@ -151,6 +158,7 @@ const Contact = () => {
         </div>
       </section>
     </Layout>
+    </>
   );
 };
 

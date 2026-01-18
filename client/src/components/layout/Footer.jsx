@@ -134,20 +134,15 @@ export default function Footer() {
               © {new Date().getFullYear()} ThesisAlibi. All rights reserved.
             </p>
 
-            <div className="flex items-center gap-2 text-sm">
-              <span>Made with</span>
-
-              <Heart className="h-4 w-4 text-red-500 fill-red-500" />
-
-              <span>by</span>
-
+            <div className="flex items-center gap-1 text-sm">
+              <span>Design & Developed By :</span>
               <Link
                 to={"/devloper"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-medium hover:text-secondary transition-colors"
+                className="font-medium text-secondary transition-colors"
               >
-                Tejas Derle Patil
+              Tejas Derle Patil
               </Link>
             </div>
 

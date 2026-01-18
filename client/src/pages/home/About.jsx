@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { getAboutSections } from "../../services/aboutApi";
+import SEO from "../../components/SEO";
 
 const achievements = [
   { icon: GraduationCap, value: "100+", label: "PGs Guided" },
@@ -41,24 +42,44 @@ const About = () => {
 
   if (loading) {
     return (
-      <Layout>
-        <p className="text-center py-20 text-gray-500">Loading...</p>
-      </Layout>
+      <>
+        <SEO
+          title="About Us"
+          description="Learn about ThesisAlibi's mission, vision, and commitment to providing exceptional thesis assistance and academic support services to students worldwide."
+          keywords="about ThesisAlibi, thesis assistance company, academic support mission, research guidance team"
+        />
+        <Layout>
+          <p className="text-center py-20 text-gray-500">Loading...</p>
+        </Layout>
+      </>
     );
   }
 
   if (!about) {
     return (
-      <Layout>
-        <p className="text-center py-20 text-red-500">
-          Failed to load About section.
-        </p>
-      </Layout>
+      <>
+        <SEO
+          title="About Us"
+          description="Learn about ThesisAlibi's mission, vision, and commitment to providing exceptional thesis assistance and academic support services to students worldwide."
+          keywords="about ThesisAlibi, thesis assistance company, academic support mission, research guidance team"
+        />
+        <Layout>
+          <p className="text-center py-20 text-red-500">
+            Failed to load About section.
+          </p>
+        </Layout>
+      </>
     );
   }
 
   return (
-    <Layout>
+    <>
+      <SEO
+        title="About Us"
+        description="Learn about ThesisAlibi's mission, vision, and commitment to providing exceptional thesis assistance and academic support services to students worldwide."
+        keywords="about ThesisAlibi, thesis assistance company, academic support mission, research guidance team"
+      />
+      <Layout>
       {/* Page Header */}
       <section className="bg-primary py-20">
         <div className="container mx-auto px-4 text-center">
@@ -176,6 +197,7 @@ const About = () => {
         </div>
       </section>
     </Layout>
+    </>
   );
 };
 
